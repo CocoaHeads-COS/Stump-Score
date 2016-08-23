@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE67C55E1D6C99B900F1C459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE67C55D1D6C99B900F1C459 /* AppDelegate.swift */; };
+		EE67C5601D6C99B900F1C459 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE67C55F1D6C99B900F1C459 /* ViewController.swift */; };
+		EE67C5631D6C99B900F1C459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE67C5611D6C99B900F1C459 /* Main.storyboard */; };
+		EE67C5651D6C99B900F1C459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE67C5641D6C99B900F1C459 /* Assets.xcassets */; };
+		EE67C5681D6C99B900F1C459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE67C5661D6C99B900F1C459 /* LaunchScreen.storyboard */; };
+		EE67C5731D6C99B900F1C459 /* Stump_ScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE67C5721D6C99B900F1C459 /* Stump_ScoreTests.swift */; };
+		EE67C57E1D6C99B900F1C459 /* Stump_ScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE67C57D1D6C99B900F1C459 /* Stump_ScoreUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE67C56F1D6C99B900F1C459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE67C5521D6C99B900F1C459 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE67C5591D6C99B900F1C459;
+			remoteInfo = "Stump Score";
+		};
+		EE67C57A1D6C99B900F1C459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE67C5521D6C99B900F1C459 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE67C5591D6C99B900F1C459;
+			remoteInfo = "Stump Score";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EE67C55A1D6C99B900F1C459 /* Stump Score.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stump Score.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE67C55D1D6C99B900F1C459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE67C55F1D6C99B900F1C459 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE67C5621D6C99B900F1C459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE67C5641D6C99B900F1C459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE67C5671D6C99B900F1C459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE67C5691D6C99B900F1C459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE67C56E1D6C99B900F1C459 /* Stump ScoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stump ScoreTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE67C5721D6C99B900F1C459 /* Stump_ScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stump_ScoreTests.swift; sourceTree = "<group>"; };
+		EE67C5741D6C99B900F1C459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE67C5791D6C99B900F1C459 /* Stump ScoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stump ScoreUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE67C57D1D6C99B900F1C459 /* Stump_ScoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stump_ScoreUITests.swift; sourceTree = "<group>"; };
+		EE67C57F1D6C99B900F1C459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE67C5571D6C99B900F1C459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE67C56B1D6C99B900F1C459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE67C5761D6C99B900F1C459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE67C5511D6C99B900F1C459 = {
+			isa = PBXGroup;
+			children = (
+				EE67C55C1D6C99B900F1C459 /* Stump Score */,
+				EE67C5711D6C99B900F1C459 /* Stump ScoreTests */,
+				EE67C57C1D6C99B900F1C459 /* Stump ScoreUITests */,
+				EE67C55B1D6C99B900F1C459 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE67C55B1D6C99B900F1C459 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE67C55A1D6C99B900F1C459 /* Stump Score.app */,
+				EE67C56E1D6C99B900F1C459 /* Stump ScoreTests.xctest */,
+				EE67C5791D6C99B900F1C459 /* Stump ScoreUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE67C55C1D6C99B900F1C459 /* Stump Score */ = {
+			isa = PBXGroup;
+			children = (
+				EE67C55D1D6C99B900F1C459 /* AppDelegate.swift */,
+				EE67C55F1D6C99B900F1C459 /* ViewController.swift */,
+				EE67C5611D6C99B900F1C459 /* Main.storyboard */,
+				EE67C5641D6C99B900F1C459 /* Assets.xcassets */,
+				EE67C5661D6C99B900F1C459 /* LaunchScreen.storyboard */,
+				EE67C5691D6C99B900F1C459 /* Info.plist */,
+			);
+			path = "Stump Score";
+			sourceTree = "<group>";
+		};
+		EE67C5711D6C99B900F1C459 /* Stump ScoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE67C5721D6C99B900F1C459 /* Stump_ScoreTests.swift */,
+				EE67C5741D6C99B900F1C459 /* Info.plist */,
+			);
+			path = "Stump ScoreTests";
+			sourceTree = "<group>";
+		};
+		EE67C57C1D6C99B900F1C459 /* Stump ScoreUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE67C57D1D6C99B900F1C459 /* Stump_ScoreUITests.swift */,
+				EE67C57F1D6C99B900F1C459 /* Info.plist */,
+			);
+			path = "Stump ScoreUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE67C5591D6C99B900F1C459 /* Stump Score */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE67C5821D6C99B900F1C459 /* Build configuration list for PBXNativeTarget "Stump Score" */;
+			buildPhases = (
+				EE67C5561D6C99B900F1C459 /* Sources */,
+				EE67C5571D6C99B900F1C459 /* Frameworks */,
+				EE67C5581D6C99B900F1C459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stump Score";
+			productName = "Stump Score";
+			productReference = EE67C55A1D6C99B900F1C459 /* Stump Score.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE67C56D1D6C99B900F1C459 /* Stump ScoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE67C5851D6C99B900F1C459 /* Build configuration list for PBXNativeTarget "Stump ScoreTests" */;
+			buildPhases = (
+				EE67C56A1D6C99B900F1C459 /* Sources */,
+				EE67C56B1D6C99B900F1C459 /* Frameworks */,
+				EE67C56C1D6C99B900F1C459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE67C5701D6C99B900F1C459 /* PBXTargetDependency */,
+			);
+			name = "Stump ScoreTests";
+			productName = "Stump ScoreTests";
+			productReference = EE67C56E1D6C99B900F1C459 /* Stump ScoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE67C5781D6C99B900F1C459 /* Stump ScoreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE67C5881D6C99B900F1C459 /* Build configuration list for PBXNativeTarget "Stump ScoreUITests" */;
+			buildPhases = (
+				EE67C5751D6C99B900F1C459 /* Sources */,
+				EE67C5761D6C99B900F1C459 /* Frameworks */,
+				EE67C5771D6C99B900F1C459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE67C57B1D6C99B900F1C459 /* PBXTargetDependency */,
+			);
+			name = "Stump ScoreUITests";
+			productName = "Stump ScoreUITests";
+			productReference = EE67C5791D6C99B900F1C459 /* Stump ScoreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE67C5521D6C99B900F1C459 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Atomic Bird LLC";
+				TargetAttributes = {
+					EE67C5591D6C99B900F1C459 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = FZTVR399HK;
+						ProvisioningStyle = Automatic;
+					};
+					EE67C56D1D6C99B900F1C459 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = FZTVR399HK;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EE67C5591D6C99B900F1C459;
+					};
+					EE67C5781D6C99B900F1C459 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = FZTVR399HK;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EE67C5591D6C99B900F1C459;
+					};
+				};
+			};
+			buildConfigurationList = EE67C5551D6C99B900F1C459 /* Build configuration list for PBXProject "Stump Score" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE67C5511D6C99B900F1C459;
+			productRefGroup = EE67C55B1D6C99B900F1C459 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE67C5591D6C99B900F1C459 /* Stump Score */,
+				EE67C56D1D6C99B900F1C459 /* Stump ScoreTests */,
+				EE67C5781D6C99B900F1C459 /* Stump ScoreUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE67C5581D6C99B900F1C459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE67C5681D6C99B900F1C459 /* LaunchScreen.storyboard in Resources */,
+				EE67C5651D6C99B900F1C459 /* Assets.xcassets in Resources */,
+				EE67C5631D6C99B900F1C459 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE67C56C1D6C99B900F1C459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE67C5771D6C99B900F1C459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE67C5561D6C99B900F1C459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE67C5601D6C99B900F1C459 /* ViewController.swift in Sources */,
+				EE67C55E1D6C99B900F1C459 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE67C56A1D6C99B900F1C459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE67C5731D6C99B900F1C459 /* Stump_ScoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE67C5751D6C99B900F1C459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE67C57E1D6C99B900F1C459 /* Stump_ScoreUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE67C5701D6C99B900F1C459 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE67C5591D6C99B900F1C459 /* Stump Score */;
+			targetProxy = EE67C56F1D6C99B900F1C459 /* PBXContainerItemProxy */;
+		};
+		EE67C57B1D6C99B900F1C459 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE67C5591D6C99B900F1C459 /* Stump Score */;
+			targetProxy = EE67C57A1D6C99B900F1C459 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE67C5611D6C99B900F1C459 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE67C5621D6C99B900F1C459 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE67C5661D6C99B900F1C459 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE67C5671D6C99B900F1C459 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE67C5801D6C99B900F1C459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		EE67C5811D6C99B900F1C459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE67C5831D6C99B900F1C459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FZTVR399HK;
+				INFOPLIST_FILE = "Stump Score/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atomicbird.Stump-Score";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EE67C5841D6C99B900F1C459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FZTVR399HK;
+				INFOPLIST_FILE = "Stump Score/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atomicbird.Stump-Score";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		EE67C5861D6C99B900F1C459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FZTVR399HK;
+				INFOPLIST_FILE = "Stump ScoreTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atomicbird.Stump-ScoreTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stump Score.app/Stump Score";
+			};
+			name = Debug;
+		};
+		EE67C5871D6C99B900F1C459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = FZTVR399HK;
+				INFOPLIST_FILE = "Stump ScoreTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atomicbird.Stump-ScoreTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stump Score.app/Stump Score";
+			};
+			name = Release;
+		};
+		EE67C5891D6C99B900F1C459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FZTVR399HK;
+				INFOPLIST_FILE = "Stump ScoreUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atomicbird.Stump-ScoreUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Stump Score";
+			};
+			name = Debug;
+		};
+		EE67C58A1D6C99B900F1C459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = FZTVR399HK;
+				INFOPLIST_FILE = "Stump ScoreUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atomicbird.Stump-ScoreUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Stump Score";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE67C5551D6C99B900F1C459 /* Build configuration list for PBXProject "Stump Score" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE67C5801D6C99B900F1C459 /* Debug */,
+				EE67C5811D6C99B900F1C459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE67C5821D6C99B900F1C459 /* Build configuration list for PBXNativeTarget "Stump Score" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE67C5831D6C99B900F1C459 /* Debug */,
+				EE67C5841D6C99B900F1C459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE67C5851D6C99B900F1C459 /* Build configuration list for PBXNativeTarget "Stump ScoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE67C5861D6C99B900F1C459 /* Debug */,
+				EE67C5871D6C99B900F1C459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE67C5881D6C99B900F1C459 /* Build configuration list for PBXNativeTarget "Stump ScoreUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE67C5891D6C99B900F1C459 /* Debug */,
+				EE67C58A1D6C99B900F1C459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE67C5521D6C99B900F1C459 /* Project object */;
+}
