@@ -10,9 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var panelScoreLabel: UILabel!
+    @IBOutlet weak var audienceScoreLabel: UILabel!
+    
+    var panelScore = 0 {
+        didSet {
+            UserDefaults.standard.set(panelScore, forKey: panelScoreKey)
+            panelScoreLabel.text = String(panelScore)
+        }
+    }
+    var audienceScore = 0 {
+        didSet {
+            UserDefaults.standard.set(audienceScore, forKey: audienceScoreKey)
+            audienceScoreLabel.text = String(audienceScore)
+        }
+    }
+    
+    let panelScoreKey = "panelScoreKey"
+    let audienceScoreKey = "audienceScoreKey"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let savedPanelScore = UserDefaults.standard.object(forKey: panelScoreKey) as? NSNumber
+        panelScore = savedPanelScore?.intValue ?? 0
+        let savedAudienceScore = UserDefaults.standard.object(forKey: audienceScoreKey) as? NSNumber
+        audienceScore = savedAudienceScore?.intValue ?? 0
+        
+        panelScoreLabel.text = String(panelScore)
+        audienceScoreLabel.text = String(audienceScore)
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +46,39 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func raisePanelScore(_ sender: AnyObject) {
+        panelScore += 1
+    }
+    
+    @IBAction func lowerPanelScore(_ sender: AnyObject) {
+        panelScore -= 1
+    }
+    
+    @IBAction func raiseAudienceScore(_ sender: AnyObject) {
+        audienceScore += 1
+    }
 
+    @IBAction func lowerAudienceScore(_ sender: AnyObject) {
+        audienceScore -= 1
+    }
+    
+    @IBAction func resetScores(_ sender: AnyObject) {
+        let resetAlert = UIAlertController(title: "Are you sure?",
+                                           message: "Really reset the scores? There is no 'undo'",
+                                           preferredStyle: .alert)
+        let resetAction = UIAlertAction(title: "Reset",
+                                        style: .destructive) { (_) in
+                                            self.panelScore = 0
+                                            self.audienceScore = 0
+        }
+        resetAlert.addAction(resetAction)
+        
+        let cancelAction = UIAlertAction(title: "Cancel",
+                                         style: .default,
+                                         handler: nil)
+        resetAlert.addAction(cancelAction)
+        
+        self.present(resetAlert, animated: true, completion: nil)
+    }
 }
 
