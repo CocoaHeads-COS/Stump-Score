@@ -32,10 +32,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let savedPanelScore = UserDefaults.standard.object(forKey: panelScoreKey) as? NSNumber
-        panelScore = savedPanelScore?.intValue ?? 0
-        let savedAudienceScore = UserDefaults.standard.object(forKey: audienceScoreKey) as? NSNumber
-        audienceScore = savedAudienceScore?.intValue ?? 0
+        
+        UserDefaults.standard.register(defaults: [panelScoreKey : 0, audienceScoreKey: 0])
+        let savedPanelScore = UserDefaults.standard.object(forKey: panelScoreKey) as! NSNumber
+        panelScore = savedPanelScore.intValue
+        let savedAudienceScore = UserDefaults.standard.object(forKey: audienceScoreKey) as! NSNumber
+        audienceScore = savedAudienceScore.intValue
         
         panelScoreLabel.text = String(panelScore)
         audienceScoreLabel.text = String(audienceScore)
