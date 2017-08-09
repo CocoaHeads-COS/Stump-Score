@@ -39,7 +39,7 @@ class ViewController: UIViewController {
                 self.animateNewText(label: self.audienceScoreLabel)
             }
             pendingAudienceWorkItem = workItem
-            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000), execute:workItem) 
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000), execute:workItem)
         }
     }
     
@@ -86,12 +86,20 @@ class ViewController: UIViewController {
         panelScore -= 1
     }
     
+    @IBAction func panelPlusTen(_ sender: Any) {
+        panelScore += 10
+    }
+    
     @IBAction func raiseAudienceScore(_ sender: AnyObject) {
         audienceScore += 1
     }
 
     @IBAction func lowerAudienceScore(_ sender: AnyObject) {
         audienceScore -= 1
+    }
+    
+    @IBAction func audiencePlusTen(_ sender: Any) {
+        audienceScore += 10
     }
     
     @IBAction func resetScores(_ sender: AnyObject) {

@@ -53,7 +53,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="YsQ-iA-ayq">
-                                <rect key="frame" x="151" y="695" width="200.5" height="50"/>
+                                <rect key="frame" x="39.5" y="695" width="423.5" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4P-GX-C3Y">
                                         <rect key="frame" x="0.0" y="0.0" width="50.5" height="50"/>
@@ -83,10 +83,20 @@
                                             <action selector="raisePanelScore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ut0-0F-8c0"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hH-jD-WGy">
+                                        <rect key="frame" x="300.5" y="0.0" width="123" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                        <state key="normal" title="+10">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="panelPlusTen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M6U-t8-ro3"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="SFs-ef-9nk">
-                                <rect key="frame" x="673.5" y="695" width="200" height="50"/>
+                                <rect key="frame" x="562" y="695" width="423" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGy-2Z-cQX">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -116,11 +126,21 @@
                                             <action selector="raiseAudienceScore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JmV-St-HPv"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fca-Ow-t97">
+                                        <rect key="frame" x="300" y="0.0" width="123" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                        <state key="normal" title="+10">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="audiencePlusTen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WJ7-Fz-AxK"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWF-0X-pQa">
-                                <rect key="frame" x="466.5" y="705" width="91" height="30"/>
-                                <state key="normal" title="Reset Scores">
+                                <rect key="frame" x="492.5" y="705" width="39" height="30"/>
+                                <state key="normal" title="Reset">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
