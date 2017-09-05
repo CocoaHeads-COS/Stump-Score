@@ -26,7 +26,7 @@ class ViewController: UIViewController {
                 self.animateNewText(label: self.panelScoreLabel)
             }
             pendingPanelWorkItem = workItem
-            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000), execute:workItem) 
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100), execute:workItem)
         }
     }
     var audienceScore = 0 {
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
                 self.animateNewText(label: self.audienceScoreLabel)
             }
             pendingAudienceWorkItem = workItem
-            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000), execute:workItem)
+            DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100), execute:workItem)
         }
     }
     
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
     func animateNewText(label:UILabel) -> Void {
         UIView.animate(withDuration: 0.3, 
                        animations: { 
-                        label.transform = CGAffineTransform.identity.rotated(by: CGFloat.pi).scaledBy(x: 2, y: 2)
+                        label.transform = CGAffineTransform.identity.scaledBy(x: 2, y: 2)
                         label.textColor = UIColor.red
                         //                        self.panelScoreLabel.alpha = 0.0
         }) { (_) in
