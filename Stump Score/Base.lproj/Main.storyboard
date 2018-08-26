@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -53,10 +52,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="YsQ-iA-ayq">
-                                <rect key="frame" x="39.5" y="695" width="423.5" height="50"/>
+                                <rect key="frame" x="40" y="695" width="422" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4P-GX-C3Y">
-                                        <rect key="frame" x="0.0" y="0.0" width="50.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="Vcz-N6-9Fg"/>
                                             <constraint firstAttribute="height" constant="50" id="rFB-ue-fdQ"/>
@@ -70,7 +69,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxt-cN-Z0S">
-                                        <rect key="frame" x="150.5" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="150" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Cob-jx-mUq"/>
                                             <constraint firstAttribute="width" constant="50" id="CpL-HE-NhF"/>
@@ -84,7 +83,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hH-jD-WGy">
-                                        <rect key="frame" x="300.5" y="0.0" width="123" height="50"/>
+                                        <rect key="frame" x="300" y="0.0" width="122" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                         <state key="normal" title="+10">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -96,7 +95,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="SFs-ef-9nk">
-                                <rect key="frame" x="562" y="695" width="423" height="50"/>
+                                <rect key="frame" x="562" y="695" width="422" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CGy-2Z-cQX">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -127,7 +126,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fca-Ow-t97">
-                                        <rect key="frame" x="300" y="0.0" width="123" height="50"/>
+                                        <rect key="frame" x="300" y="0.0" width="122" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                         <state key="normal" title="+10">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
