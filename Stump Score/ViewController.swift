@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var audienceAskedLabel: UILabel!
     @IBOutlet weak var panelAskedStepper: UIStepper!
     @IBOutlet weak var audienceAskedStepper: UIStepper!
+    @IBOutlet weak var lastUpdatedDateLabel: UILabel!
     
     private var pendingPanelWorkItem : DispatchWorkItem?
     private var pendingAudienceWorkItem : DispatchWorkItem?
@@ -67,6 +68,8 @@ class ViewController: UIViewController {
     let panelAskedKey = "panelAskedKey"
     let audienceAskedKey = "audienceAskedKey"
     
+    var lastUpdatedDate = Date()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -82,6 +85,12 @@ class ViewController: UIViewController {
         
         panelAskedCount = UserDefaults.standard.integer(forKey: panelAskedKey)
         audienceAskedCount = UserDefaults.standard.integer(forKey: audienceAskedKey)
+        
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
+            let secondSinceLastTouch = Int(self.lastUpdatedDate.timeIntervalSinceNow) * -1
+            
+            self.lastUpdatedDateLabel.text = "\(secondSinceLastTouch)"
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -104,34 +113,42 @@ class ViewController: UIViewController {
     
     @IBAction func raisePanelScore(_ sender: AnyObject) {
         panelScore += 1
+        lastUpdatedDate = Date()
     }
     
     @IBAction func lowerPanelScore(_ sender: AnyObject) {
         panelScore -= 1
+        lastUpdatedDate = Date()
     }
     
     @IBAction func panelPlusTen(_ sender: Any) {
         panelScore += 10
+        lastUpdatedDate = Date()
     }
     
     @IBAction func raiseAudienceScore(_ sender: AnyObject) {
         audienceScore += 1
+        lastUpdatedDate = Date()
     }
 
     @IBAction func lowerAudienceScore(_ sender: AnyObject) {
         audienceScore -= 1
+        lastUpdatedDate = Date()
     }
     
     @IBAction func audiencePlusTen(_ sender: Any) {
         audienceScore += 10
+        lastUpdatedDate = Date()
     }
     
     @IBAction func panelQuestionCountChange(_ sender: UIStepper) {
         panelAskedCount = Int(sender.value)
+        lastUpdatedDate = Date()
     }
     
     @IBAction func audienceQuestionCountChanged(_ sender: UIStepper) {
         audienceAskedCount = Int(sender.value)
+        lastUpdatedDate = Date()
     }
     
     @IBAction func resetScores(_ sender: AnyObject) {
@@ -142,6 +159,7 @@ class ViewController: UIViewController {
                                         style: .destructive) { (_) in
                                             self.panelScore = 0
                                             self.audienceScore = 0
+                                            self.lastUpdatedDate = Date()
         }
         resetAlert.addAction(resetAction)
         
