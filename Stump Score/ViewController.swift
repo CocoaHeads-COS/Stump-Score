@@ -12,6 +12,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var panelScoreLabel: UILabel!
     @IBOutlet weak var audienceScoreLabel: UILabel!
+    @IBOutlet weak var panelAskedLabel: UILabel!
+    @IBOutlet weak var audienceAskedLabel: UILabel!
+    @IBOutlet weak var panelAskedStepper: UIStepper!
+    @IBOutlet weak var audienceAskedStepper: UIStepper!
     
     private var pendingPanelWorkItem : DispatchWorkItem?
     private var pendingAudienceWorkItem : DispatchWorkItem?
@@ -43,14 +47,31 @@ class ViewController: UIViewController {
         }
     }
     
+    var panelAskedCount = 0 {
+        didSet {
+            UserDefaults.standard.set(panelAskedCount, forKey: panelAskedKey)
+            panelAskedLabel.text = "\(panelAskedCount) Asked"
+            panelAskedStepper.value = Double(panelAskedCount)
+        }
+    }
+    var audienceAskedCount = 0 {
+        didSet {
+            UserDefaults.standard.set(audienceAskedCount, forKey: audienceAskedKey)
+            audienceAskedLabel.text = "\(audienceAskedCount) Asked"
+            audienceAskedStepper.value = Double(audienceAskedCount)
+        }
+    }
+
     let panelScoreKey = "panelScoreKey"
     let audienceScoreKey = "audienceScoreKey"
+    let panelAskedKey = "panelAskedKey"
+    let audienceAskedKey = "audienceAskedKey"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        UserDefaults.standard.register(defaults: [panelScoreKey : 0, audienceScoreKey: 0])
+        UserDefaults.standard.register(defaults: [panelScoreKey : 0, audienceScoreKey: 0, panelAskedKey: 0, audienceAskedKey: 0])
         let savedPanelScore = UserDefaults.standard.object(forKey: panelScoreKey) as! NSNumber
         panelScore = savedPanelScore.intValue
         let savedAudienceScore = UserDefaults.standard.object(forKey: audienceScoreKey) as! NSNumber
@@ -58,6 +79,9 @@ class ViewController: UIViewController {
         
         panelScoreLabel.text = String(panelScore)
         audienceScoreLabel.text = String(audienceScore)
+        
+        panelAskedCount = UserDefaults.standard.integer(forKey: panelAskedKey)
+        audienceAskedCount = UserDefaults.standard.integer(forKey: audienceAskedKey)
     }
 
     override func didReceiveMemoryWarning() {
@@ -100,6 +124,14 @@ class ViewController: UIViewController {
     
     @IBAction func audiencePlusTen(_ sender: Any) {
         audienceScore += 10
+    }
+    
+    @IBAction func panelQuestionCountChange(_ sender: UIStepper) {
+        panelAskedCount = Int(sender.value)
+    }
+    
+    @IBAction func audienceQuestionCountChanged(_ sender: UIStepper) {
+        audienceAskedCount = Int(sender.value)
     }
     
     @IBAction func resetScores(_ sender: AnyObject) {
