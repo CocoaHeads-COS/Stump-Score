@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -182,6 +182,16 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQd-yz-LQx">
+                                <rect key="frame" x="462" y="724" width="100" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="9A2-0t-NPp"/>
+                                    <constraint firstAttribute="width" constant="100" id="LDG-aN-gm7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -202,12 +212,14 @@
                             <constraint firstItem="YwZ-fq-Xki" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QjY-Os-1DK"/>
                             <constraint firstItem="OtC-YB-xBc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="T6h-zY-CcW"/>
                             <constraint firstItem="YsQ-iA-ayq" firstAttribute="leading" secondItem="YwZ-fq-Xki" secondAttribute="leading" id="VVX-6G-qPw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FQd-yz-LQx" secondAttribute="bottom" id="VWJ-Xt-fRT"/>
                             <constraint firstItem="Gsk-pt-5lj" firstAttribute="top" secondItem="ebq-IE-vLt" secondAttribute="bottom" id="Vo1-LY-Pms"/>
                             <constraint firstItem="SFs-ef-9nk" firstAttribute="trailing" secondItem="Gsk-pt-5lj" secondAttribute="trailing" id="Wo9-d8-Wh1"/>
                             <constraint firstItem="vWF-0X-pQa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZDy-Io-DNt"/>
                             <constraint firstItem="ebq-IE-vLt" firstAttribute="leading" secondItem="OtC-YB-xBc" secondAttribute="trailing" constant="60" id="ac1-hb-QuB"/>
                             <constraint firstItem="kJX-vW-8t9" firstAttribute="centerX" secondItem="YsQ-iA-ayq" secondAttribute="centerX" id="eWn-aY-pl9"/>
                             <constraint firstItem="Gsk-pt-5lj" firstAttribute="leading" secondItem="YwZ-fq-Xki" secondAttribute="trailing" constant="60" id="hyb-bm-I4y"/>
+                            <constraint firstItem="FQd-yz-LQx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iFe-Nw-MRi"/>
                             <constraint firstItem="SFs-ef-9nk" firstAttribute="leading" secondItem="Gsk-pt-5lj" secondAttribute="leading" id="k4a-HI-RF1"/>
                             <constraint firstItem="Gsk-pt-5lj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="u8G-kI-QqA"/>
                             <constraint firstItem="kJX-vW-8t9" firstAttribute="top" secondItem="YwZ-fq-Xki" secondAttribute="bottom" id="wh5-6O-Ppn"/>
@@ -218,6 +230,7 @@
                         <outlet property="audienceAskedLabel" destination="gWh-rW-pWa" id="E6K-bN-3gW"/>
                         <outlet property="audienceAskedStepper" destination="bH5-PW-zUo" id="Ypm-FS-lCs"/>
                         <outlet property="audienceScoreLabel" destination="Gsk-pt-5lj" id="a8Q-cK-JXS"/>
+                        <outlet property="lastUpdatedDateLabel" destination="FQd-yz-LQx" id="fr3-J8-PMa"/>
                         <outlet property="panelAskedLabel" destination="sbA-2L-8qB" id="HFp-GZ-aTX"/>
                         <outlet property="panelAskedStepper" destination="Yek-c0-4t5" id="KNw-0B-eCX"/>
                         <outlet property="panelScoreLabel" destination="YwZ-fq-Xki" id="hIC-Pi-LTC"/>
