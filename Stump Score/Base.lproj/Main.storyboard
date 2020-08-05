@@ -31,13 +31,13 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Panel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TEF-8t-zSM">
                                                         <rect key="frame" x="0.0" y="0.0" width="512" height="119.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="100"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="Jsk-GJ-JRy">
                                                         <rect key="frame" x="0.0" y="119.5" width="512" height="470.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="500"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="500"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -133,13 +133,13 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audience" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IoV-x9-sRA">
                                                         <rect key="frame" x="0.0" y="0.0" width="512" height="119.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="100"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="Z5o-zm-THm">
                                                         <rect key="frame" x="0.0" y="119.5" width="512" height="470.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="500"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="500"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hGR-BI-7Lv">
