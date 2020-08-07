@@ -50,7 +50,7 @@
                                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Tct-Di-Yhm">
                                                                 <rect key="frame" x="113.5" y="9" width="94" height="32"/>
                                                                 <connections>
-                                                                    <action selector="audienceQuestionCountChanged:" destination="Ayy-nG-Ok2" eventType="valueChanged" id="URl-b6-sDr"/>
+                                                                    <action selector="panelQuestionCountChange:" destination="Ayy-nG-Ok2" eventType="valueChanged" id="I9f-D4-gb7"/>
                                                                 </connections>
                                                             </stepper>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 asked" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr6-dz-2ie">
@@ -151,7 +151,7 @@
                                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1Il-1k-13v">
                                                                 <rect key="frame" x="113.5" y="9" width="94" height="32"/>
                                                                 <connections>
-                                                                    <action selector="panelQuestionCountChange:" destination="Ayy-nG-Ok2" eventType="valueChanged" id="Lko-4w-jPB"/>
+                                                                    <action selector="audienceQuestionCountChanged:" destination="Ayy-nG-Ok2" eventType="valueChanged" id="W6w-sW-CQn"/>
                                                                 </connections>
                                                             </stepper>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 asked" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoA-EV-YQO">
