@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B1C40837573ED59A8F8B748 /* Pods_Stump_Score_Stump_ScoreUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E147492AED08E97F92E31E1 /* Pods_Stump_Score_Stump_ScoreUITests.framework */; };
+		9EE02A50B7FE9F76D055F4FA /* Pods_Stump_ScoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63CD559E2A311D4545EE34BE /* Pods_Stump_ScoreTests.framework */; };
+		C66EE627F72A1D0F91E0AF64 /* Pods_Stump_Score.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6E06B059D4DDFEE30B0CE2 /* Pods_Stump_Score.framework */; };
 		EE67C55E1D6C99B900F1C459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE67C55D1D6C99B900F1C459 /* AppDelegate.swift */; };
 		EE67C5601D6C99B900F1C459 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE67C55F1D6C99B900F1C459 /* ViewController.swift */; };
 		EE67C5631D6C99B900F1C459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE67C5611D6C99B900F1C459 /* Main.storyboard */; };
@@ -14,6 +17,8 @@
 		EE67C5681D6C99B900F1C459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE67C5661D6C99B900F1C459 /* LaunchScreen.storyboard */; };
 		EE67C5731D6C99B900F1C459 /* Stump_ScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE67C5721D6C99B900F1C459 /* Stump_ScoreTests.swift */; };
 		EE67C57E1D6C99B900F1C459 /* Stump_ScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE67C57D1D6C99B900F1C459 /* Stump_ScoreUITests.swift */; };
+		EE7B299D24DDC005002C8B9B /* StumpScoreWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B299C24DDC005002C8B9B /* StumpScoreWatcher.swift */; };
+		EE7B299F24DE05E8002C8B9B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE7B299E24DE05E8002C8B9B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B2D7A3285AF6944486E93EA /* Pods-Stump Score-Stump ScoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stump Score-Stump ScoreUITests.debug.xcconfig"; path = "Target Support Files/Pods-Stump Score-Stump ScoreUITests/Pods-Stump Score-Stump ScoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1E147492AED08E97F92E31E1 /* Pods_Stump_Score_Stump_ScoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stump_Score_Stump_ScoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BCCB4C51BD14D6122050F90 /* Pods-Stump Score.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stump Score.release.xcconfig"; path = "Target Support Files/Pods-Stump Score/Pods-Stump Score.release.xcconfig"; sourceTree = "<group>"; };
+		63CD559E2A311D4545EE34BE /* Pods_Stump_ScoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stump_ScoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E003B7B076DB26ED8A8F9CF /* Pods-Stump Score.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stump Score.debug.xcconfig"; path = "Target Support Files/Pods-Stump Score/Pods-Stump Score.debug.xcconfig"; sourceTree = "<group>"; };
+		81371FE64EB1A07126F76BD8 /* Pods-Stump ScoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stump ScoreTests.release.xcconfig"; path = "Target Support Files/Pods-Stump ScoreTests/Pods-Stump ScoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		898BF30FF09B594645C1FCC0 /* Pods-Stump ScoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stump ScoreTests.debug.xcconfig"; path = "Target Support Files/Pods-Stump ScoreTests/Pods-Stump ScoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8642DF74CE696FBD2250FD6 /* Pods-Stump Score-Stump ScoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stump Score-Stump ScoreUITests.release.xcconfig"; path = "Target Support Files/Pods-Stump Score-Stump ScoreUITests/Pods-Stump Score-Stump ScoreUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EE67C55A1D6C99B900F1C459 /* Stump Score.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stump Score.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE67C55D1D6C99B900F1C459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE67C55F1D6C99B900F1C459 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +60,9 @@
 		EE67C5791D6C99B900F1C459 /* Stump ScoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stump ScoreUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE67C57D1D6C99B900F1C459 /* Stump_ScoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stump_ScoreUITests.swift; sourceTree = "<group>"; };
 		EE67C57F1D6C99B900F1C459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE7B299C24DDC005002C8B9B /* StumpScoreWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StumpScoreWatcher.swift; sourceTree = "<group>"; };
+		EE7B299E24DE05E8002C8B9B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EF6E06B059D4DDFEE30B0CE2 /* Pods_Stump_Score.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stump_Score.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C66EE627F72A1D0F91E0AF64 /* Pods_Stump_Score.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EE02A50B7FE9F76D055F4FA /* Pods_Stump_ScoreTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +86,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B1C40837573ED59A8F8B748 /* Pods_Stump_Score_Stump_ScoreUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65A868057A94B8ABE1C9AFA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E003B7B076DB26ED8A8F9CF /* Pods-Stump Score.debug.xcconfig */,
+				5BCCB4C51BD14D6122050F90 /* Pods-Stump Score.release.xcconfig */,
+				1B2D7A3285AF6944486E93EA /* Pods-Stump Score-Stump ScoreUITests.debug.xcconfig */,
+				A8642DF74CE696FBD2250FD6 /* Pods-Stump Score-Stump ScoreUITests.release.xcconfig */,
+				898BF30FF09B594645C1FCC0 /* Pods-Stump ScoreTests.debug.xcconfig */,
+				81371FE64EB1A07126F76BD8 /* Pods-Stump ScoreTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6FE69B4DCB77273DB4AAD405 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF6E06B059D4DDFEE30B0CE2 /* Pods_Stump_Score.framework */,
+				1E147492AED08E97F92E31E1 /* Pods_Stump_Score_Stump_ScoreUITests.framework */,
+				63CD559E2A311D4545EE34BE /* Pods_Stump_ScoreTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EE67C5511D6C99B900F1C459 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +123,8 @@
 				EE67C5711D6C99B900F1C459 /* Stump ScoreTests */,
 				EE67C57C1D6C99B900F1C459 /* Stump ScoreUITests */,
 				EE67C55B1D6C99B900F1C459 /* Products */,
+				65A868057A94B8ABE1C9AFA5 /* Pods */,
+				6FE69B4DCB77273DB4AAD405 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +143,12 @@
 			children = (
 				EE67C55D1D6C99B900F1C459 /* AppDelegate.swift */,
 				EE67C55F1D6C99B900F1C459 /* ViewController.swift */,
+				EE7B299C24DDC005002C8B9B /* StumpScoreWatcher.swift */,
 				EE67C5611D6C99B900F1C459 /* Main.storyboard */,
 				EE67C5641D6C99B900F1C459 /* Assets.xcassets */,
 				EE67C5661D6C99B900F1C459 /* LaunchScreen.storyboard */,
 				EE67C5691D6C99B900F1C459 /* Info.plist */,
+				EE7B299E24DE05E8002C8B9B /* GoogleService-Info.plist */,
 			);
 			path = "Stump Score";
 			sourceTree = "<group>";
@@ -132,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE67C5821D6C99B900F1C459 /* Build configuration list for PBXNativeTarget "Stump Score" */;
 			buildPhases = (
+				31CA78B7C5C9A3476317571E /* [CP] Check Pods Manifest.lock */,
 				EE67C5561D6C99B900F1C459 /* Sources */,
 				EE67C5571D6C99B900F1C459 /* Frameworks */,
 				EE67C5581D6C99B900F1C459 /* Resources */,
+				D0462479A3F17C5139B0F17B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE67C5851D6C99B900F1C459 /* Build configuration list for PBXNativeTarget "Stump ScoreTests" */;
 			buildPhases = (
+				3D776D9CA01E628C31432C61 /* [CP] Check Pods Manifest.lock */,
 				EE67C56A1D6C99B900F1C459 /* Sources */,
 				EE67C56B1D6C99B900F1C459 /* Frameworks */,
 				EE67C56C1D6C99B900F1C459 /* Resources */,
@@ -167,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE67C5881D6C99B900F1C459 /* Build configuration list for PBXNativeTarget "Stump ScoreUITests" */;
 			buildPhases = (
+				685334C67B435DAA45B6B684 /* [CP] Check Pods Manifest.lock */,
 				EE67C5751D6C99B900F1C459 /* Sources */,
 				EE67C5761D6C99B900F1C459 /* Frameworks */,
 				EE67C5771D6C99B900F1C459 /* Resources */,
+				2C0BD937804B9650A41E34AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,6 +269,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -239,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE67C5681D6C99B900F1C459 /* LaunchScreen.storyboard in Resources */,
+				EE7B299F24DE05E8002C8B9B /* GoogleService-Info.plist in Resources */,
 				EE67C5651D6C99B900F1C459 /* Assets.xcassets in Resources */,
 				EE67C5631D6C99B900F1C459 /* Main.storyboard in Resources */,
 			);
@@ -260,11 +313,133 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C0BD937804B9650A41E34AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stump Score-Stump ScoreUITests/Pods-Stump Score-Stump ScoreUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stump Score-Stump ScoreUITests/Pods-Stump Score-Stump ScoreUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31CA78B7C5C9A3476317571E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stump Score-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D776D9CA01E628C31432C61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stump ScoreTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		685334C67B435DAA45B6B684 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stump Score-Stump ScoreUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0462479A3F17C5139B0F17B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stump Score/Pods-Stump Score-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stump Score/Pods-Stump Score-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EE67C5561D6C99B900F1C459 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7B299D24DDC005002C8B9B /* StumpScoreWatcher.swift in Sources */,
 				EE67C5601D6C99B900F1C459 /* ViewController.swift in Sources */,
 				EE67C55E1D6C99B900F1C459 /* AppDelegate.swift in Sources */,
 			);
@@ -370,7 +545,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -423,7 +598,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -434,6 +609,7 @@
 		};
 		EE67C5831D6C99B900F1C459 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E003B7B076DB26ED8A8F9CF /* Pods-Stump Score.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FZTVR399HK;
@@ -448,6 +624,7 @@
 		};
 		EE67C5841D6C99B900F1C459 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BCCB4C51BD14D6122050F90 /* Pods-Stump Score.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = FZTVR399HK;
@@ -462,6 +639,7 @@
 		};
 		EE67C5861D6C99B900F1C459 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 898BF30FF09B594645C1FCC0 /* Pods-Stump ScoreTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -478,6 +656,7 @@
 		};
 		EE67C5871D6C99B900F1C459 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81371FE64EB1A07126F76BD8 /* Pods-Stump ScoreTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +673,7 @@
 		};
 		EE67C5891D6C99B900F1C459 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B2D7A3285AF6944486E93EA /* Pods-Stump Score-Stump ScoreUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = FZTVR399HK;
@@ -509,6 +689,7 @@
 		};
 		EE67C58A1D6C99B900F1C459 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8642DF74CE696FBD2250FD6 /* Pods-Stump Score-Stump ScoreUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = FZTVR399HK;

@@ -18,38 +18,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var audienceAskedStepper: UIStepper!
     @IBOutlet weak var lastUpdatedDateLabel: UILabel!
     
-    var panelScore = 0 {
+    var stumpScoreWatcher: StumpScoreWatcher?
+    var stumpScore = StumpScores() {
         didSet {
-            UserDefaults.standard.set(panelScore, forKey: panelScoreKey)
-            panelScoreLabel.text = String(panelScore)
+            panelScoreLabel.text = String(stumpScore.panelScore)
+            audienceScoreLabel.text = String(stumpScore.audienceScore)
+            panelAskedStepper.value = Double(stumpScore.panelAskedCount)
+            panelAskedLabel.text = "\(stumpScore.panelAskedCount) Asked"
+            audienceAskedStepper.value = Double(stumpScore.audienceAskedCount)
+            audienceAskedLabel.text = "\(stumpScore.audienceAskedCount) Asked"
         }
     }
-    var audienceScore = 0 {
-        didSet {
-            UserDefaults.standard.set(audienceScore, forKey: audienceScoreKey)
-            audienceScoreLabel.text = String(audienceScore)
-        }
-    }
-    
-    var panelAskedCount = 0 {
-        didSet {
-            UserDefaults.standard.set(panelAskedCount, forKey: panelAskedKey)
-            panelAskedLabel.text = "\(panelAskedCount) Asked"
-            panelAskedStepper.value = Double(panelAskedCount)
-        }
-    }
-    var audienceAskedCount = 0 {
-        didSet {
-            UserDefaults.standard.set(audienceAskedCount, forKey: audienceAskedKey)
-            audienceAskedLabel.text = "\(audienceAskedCount) Asked"
-            audienceAskedStepper.value = Double(audienceAskedCount)
-        }
-    }
-
-    let panelScoreKey = "panelScoreKey"
-    let audienceScoreKey = "audienceScoreKey"
-    let panelAskedKey = "panelAskedKey"
-    let audienceAskedKey = "audienceAskedKey"
     
     var lastUpdatedDate = Date()
     
@@ -57,17 +36,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        UserDefaults.standard.register(defaults: [panelScoreKey : 0, audienceScoreKey: 0, panelAskedKey: 0, audienceAskedKey: 0])
-        let savedPanelScore = UserDefaults.standard.object(forKey: panelScoreKey) as! NSNumber
-        panelScore = savedPanelScore.intValue
-        let savedAudienceScore = UserDefaults.standard.object(forKey: audienceScoreKey) as! NSNumber
-        audienceScore = savedAudienceScore.intValue
+        panelScoreLabel.text = "-"
+        audienceScoreLabel.text = "-"
+        panelAskedLabel.text = "-"
+        audienceAskedLabel.text = "-"
         
-        panelScoreLabel.text = String(panelScore)
-        audienceScoreLabel.text = String(audienceScore)
-        
-        panelAskedCount = UserDefaults.standard.integer(forKey: panelAskedKey)
-        audienceAskedCount = UserDefaults.standard.integer(forKey: audienceAskedKey)
+        stumpScoreWatcher = StumpScoreWatcher()
+        stumpScoreWatcher?.startWatching()
+        stumpScoreWatcher?.scoreReceived = { (incomingScore) in
+            print("Received \(incomingScore)")
+            self.stumpScore = incomingScore
+            self.lastUpdatedDate = Date()
+        }
         
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
             let secondSinceLastTouch = Int(self.lastUpdatedDate.timeIntervalSinceNow) * -1
@@ -82,43 +62,43 @@ class ViewController: UIViewController {
     }
 
     @IBAction func raisePanelScore(_ sender: AnyObject) {
-        panelScore += 1
-        lastUpdatedDate = Date()
+        stumpScore.panelScore += 1
+        stumpScoreWatcher?.sync(scores: stumpScore)
     }
     
     @IBAction func lowerPanelScore(_ sender: AnyObject) {
-        panelScore -= 1
-        lastUpdatedDate = Date()
+        stumpScore.panelScore -= 1
+        stumpScoreWatcher?.sync(scores: stumpScore)
     }
     
     @IBAction func panelPlusTen(_ sender: Any) {
-        panelScore += 10
-        lastUpdatedDate = Date()
+        stumpScore.panelScore += 10
+        stumpScoreWatcher?.sync(scores: stumpScore)
     }
     
     @IBAction func raiseAudienceScore(_ sender: AnyObject) {
-        audienceScore += 1
-        lastUpdatedDate = Date()
+        stumpScore.audienceScore += 1
+        stumpScoreWatcher?.sync(scores: stumpScore)
     }
 
     @IBAction func lowerAudienceScore(_ sender: AnyObject) {
-        audienceScore -= 1
-        lastUpdatedDate = Date()
+        stumpScore.audienceScore -= 1
+        stumpScoreWatcher?.sync(scores: stumpScore)
     }
     
     @IBAction func audiencePlusTen(_ sender: Any) {
-        audienceScore += 10
-        lastUpdatedDate = Date()
+        stumpScore.audienceScore += 10
+        stumpScoreWatcher?.sync(scores: stumpScore)
     }
     
     @IBAction func panelQuestionCountChange(_ sender: UIStepper) {
-        panelAskedCount = Int(sender.value)
-        lastUpdatedDate = Date()
+        stumpScore.panelAskedCount = Int(sender.value)
+        stumpScoreWatcher?.sync(scores: stumpScore)
     }
     
     @IBAction func audienceQuestionCountChanged(_ sender: UIStepper) {
-        audienceAskedCount = Int(sender.value)
-        lastUpdatedDate = Date()
+        stumpScore.audienceAskedCount = Int(sender.value)
+        stumpScoreWatcher?.sync(scores: stumpScore)
     }
     
     @IBAction func resetScores(_ sender: AnyObject) {
@@ -127,9 +107,8 @@ class ViewController: UIViewController {
                                            preferredStyle: .alert)
         let resetAction = UIAlertAction(title: "Reset",
                                         style: .destructive) { (_) in
-                                            self.panelScore = 0
-                                            self.audienceScore = 0
-                                            self.lastUpdatedDate = Date()
+            self.stumpScore = StumpScores()
+            self.stumpScoreWatcher?.sync(scores: self.stumpScore)
         }
         resetAlert.addAction(resetAction)
         

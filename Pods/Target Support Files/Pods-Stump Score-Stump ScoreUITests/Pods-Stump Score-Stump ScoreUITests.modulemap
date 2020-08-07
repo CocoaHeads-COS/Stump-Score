@@ -1,0 +1,6 @@
+framework module Pods_Stump_Score_Stump_ScoreUITests {
+  umbrella header "Pods-Stump Score-Stump ScoreUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
