@@ -24,8 +24,6 @@ class StumpScoreWatcher {
             self.scoreReceived?(score)
         }
     }
-    var startDate = Date()
-    
     var scoreReceived: ((StumpScores) -> Void)?
     
     let scoresPath = "stumpScores"
