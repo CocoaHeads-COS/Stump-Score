@@ -11,8 +11,8 @@ class KeypadViewController: UIViewController {
     @IBOutlet var keypadButtons: [UIButton]! {
         didSet {
             keypadButtons.forEach {
-                $0.backgroundColor = .lightGray
-                $0.setTitleColor(.white, for: .normal)
+                $0.backgroundColor = .black
+                $0.setTitleColor(.systemGreen, for: .normal)
                 // Using .filled() (or any configuration?) overrides font size, and setting it back on titleLabel doesn't have any effect
 //                $0.configuration = .filled()
             }
@@ -25,14 +25,14 @@ class KeypadViewController: UIViewController {
             let deleteImage = UIImage(systemName: "delete.left.fill", withConfiguration: largeConfig)?.withRenderingMode(.alwaysTemplate)
             backspaceButton.setImage(deleteImage, for: .normal)
             backspaceButton.setTitle("", for: .normal)
-            backspaceButton.backgroundColor = .white
-            backspaceButton.tintColor = .lightGray
+            backspaceButton.backgroundColor = .systemGreen
+            backspaceButton.tintColor = .black
         }
     }
     @IBOutlet weak var finishedButton: UIButton! {
         didSet {
-            finishedButton.backgroundColor = .lightGray
-            finishedButton.setTitleColor(.white, for: .normal)
+            finishedButton.backgroundColor = .black
+            finishedButton.setTitleColor(.systemGreen, for: .normal)
         }
     }
     @IBOutlet weak var customContainerView: UIView!
