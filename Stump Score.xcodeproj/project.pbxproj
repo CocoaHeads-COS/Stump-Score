@@ -19,6 +19,7 @@
 		EE67C57E1D6C99B900F1C459 /* Stump_ScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE67C57D1D6C99B900F1C459 /* Stump_ScoreUITests.swift */; };
 		EE7B299D24DDC005002C8B9B /* StumpScoreWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B299C24DDC005002C8B9B /* StumpScoreWatcher.swift */; };
 		EE7B299F24DE05E8002C8B9B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE7B299E24DE05E8002C8B9B /* GoogleService-Info.plist */; };
+		EECA52F326B8BCD000E61AE4 /* KeypadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA52F226B8BCD000E61AE4 /* KeypadViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		EE67C57F1D6C99B900F1C459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE7B299C24DDC005002C8B9B /* StumpScoreWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StumpScoreWatcher.swift; sourceTree = "<group>"; };
 		EE7B299E24DE05E8002C8B9B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EECA52F226B8BCD000E61AE4 /* KeypadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeypadViewController.swift; sourceTree = "<group>"; };
 		EF6E06B059D4DDFEE30B0CE2 /* Pods_Stump_Score.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stump_Score.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -144,6 +146,7 @@
 				EE67C55D1D6C99B900F1C459 /* AppDelegate.swift */,
 				EE67C55F1D6C99B900F1C459 /* ViewController.swift */,
 				EE7B299C24DDC005002C8B9B /* StumpScoreWatcher.swift */,
+				EECA52F226B8BCD000E61AE4 /* KeypadViewController.swift */,
 				EE67C5611D6C99B900F1C459 /* Main.storyboard */,
 				EE67C5641D6C99B900F1C459 /* Assets.xcassets */,
 				EE67C5661D6C99B900F1C459 /* LaunchScreen.storyboard */,
@@ -440,6 +443,7 @@
 			files = (
 				EE7B299D24DDC005002C8B9B /* StumpScoreWatcher.swift in Sources */,
 				EE67C5601D6C99B900F1C459 /* ViewController.swift in Sources */,
+				EECA52F326B8BCD000E61AE4 /* KeypadViewController.swift in Sources */,
 				EE67C55E1D6C99B900F1C459 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

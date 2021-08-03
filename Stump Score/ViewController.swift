@@ -61,34 +61,32 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func raisePanelScore(_ sender: AnyObject) {
-        stumpScore.panelScore += 1
-        stumpScoreWatcher?.sync(scores: stumpScore)
+    @IBAction func raisePanelScore(_ sender: UIButton) {
+        showKeypad(title:"Add", sender: sender) { scoreChange in
+            self.stumpScore.panelScore += scoreChange
+            self.stumpScoreWatcher?.sync(scores: self.stumpScore)
+        }
     }
     
-    @IBAction func lowerPanelScore(_ sender: AnyObject) {
-        stumpScore.panelScore -= 1
-        stumpScoreWatcher?.sync(scores: stumpScore)
+    @IBAction func lowerPanelScore(_ sender: UIButton) {
+        showKeypad(title:"Subtract", sender: sender) { scoreChange in
+            self.stumpScore.panelScore -= scoreChange
+            self.stumpScoreWatcher?.sync(scores: self.stumpScore)
+        }
     }
     
-    @IBAction func panelPlusTen(_ sender: Any) {
-        stumpScore.panelScore += 10
-        stumpScoreWatcher?.sync(scores: stumpScore)
-    }
-    
-    @IBAction func raiseAudienceScore(_ sender: AnyObject) {
-        stumpScore.audienceScore += 1
-        stumpScoreWatcher?.sync(scores: stumpScore)
+    @IBAction func raiseAudienceScore(_ sender: UIButton) {
+        showKeypad(title:"Add", sender: sender) { scoreChange in
+            self.stumpScore.audienceScore -= scoreChange
+            self.stumpScoreWatcher?.sync(scores: self.stumpScore)
+        }
     }
 
-    @IBAction func lowerAudienceScore(_ sender: AnyObject) {
-        stumpScore.audienceScore -= 1
-        stumpScoreWatcher?.sync(scores: stumpScore)
-    }
-    
-    @IBAction func audiencePlusTen(_ sender: Any) {
-        stumpScore.audienceScore += 10
-        stumpScoreWatcher?.sync(scores: stumpScore)
+    @IBAction func lowerAudienceScore(_ sender: UIButton) {
+        showKeypad(title:"Subtract", sender: sender) { scoreChange in
+            self.stumpScore.audienceScore -= scoreChange
+            self.stumpScoreWatcher?.sync(scores: self.stumpScore)
+        }
     }
     
     @IBAction func panelQuestionCountChange(_ sender: UIStepper) {
@@ -99,6 +97,21 @@ class ViewController: UIViewController {
     @IBAction func audienceQuestionCountChanged(_ sender: UIStepper) {
         stumpScore.audienceAskedCount = Int(sender.value)
         stumpScoreWatcher?.sync(scores: stumpScore)
+    }
+    
+    func showKeypad(title: String, sender: UIButton, completion: @escaping (Int) -> Void) -> Void {
+        guard let keypad = storyboard?.instantiateViewController(withIdentifier: "KeypadViewController") as? KeypadViewController else {
+            return
+        }
+        keypad.finishedButtonText = title
+        keypad.loadView()
+        keypad.modalPresentationStyle = .popover
+        keypad.popoverPresentationController?.sourceView = sender
+        keypad.preferredContentSize = keypad.customContainerView.frame.size
+        keypad.finished = completion
+        present(keypad, animated: true) {
+            print("Presentation done for \(keypad)")
+        }
     }
     
     @IBAction func resetScores(_ sender: AnyObject) {
