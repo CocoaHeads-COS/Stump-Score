@@ -14,8 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var audienceScoreLabel: UILabel!
     @IBOutlet weak var panelAskedLabel: UILabel!
     @IBOutlet weak var audienceAskedLabel: UILabel!
-    @IBOutlet weak var panelAskedStepper: UIStepper!
-    @IBOutlet weak var audienceAskedStepper: UIStepper!
     @IBOutlet weak var lastUpdatedDateLabel: UILabel!
     
     var stumpScoreWatcher: StumpScoreWatcher?
@@ -23,10 +21,8 @@ class ViewController: UIViewController {
         didSet {
             panelScoreLabel.text = String(stumpScore.panelScore)
             audienceScoreLabel.text = String(stumpScore.audienceScore)
-            panelAskedStepper.value = Double(stumpScore.panelAskedCount)
-            panelAskedLabel.text = "\(stumpScore.panelAskedCount) Asked"
-            audienceAskedStepper.value = Double(stumpScore.audienceAskedCount)
-            audienceAskedLabel.text = "\(stumpScore.audienceAskedCount) Asked"
+            panelAskedLabel.text = "Asked: \(stumpScore.panelAskedCount)"
+            audienceAskedLabel.text = "Asked: \(stumpScore.audienceAskedCount)"
         }
     }
     
@@ -89,13 +85,23 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func panelQuestionCountChange(_ sender: UIStepper) {
-        stumpScore.panelAskedCount = Int(sender.value)
+    @IBAction func speakerQPlus(_ sender: Any) {
+        stumpScore.panelAskedCount += 1
         stumpScoreWatcher?.sync(scores: stumpScore)
     }
     
-    @IBAction func audienceQuestionCountChanged(_ sender: UIStepper) {
-        stumpScore.audienceAskedCount = Int(sender.value)
+    @IBAction func speakerQMinus(_ sender: Any) {
+        stumpScore.panelAskedCount -= 1
+        stumpScoreWatcher?.sync(scores: stumpScore)
+    }
+    
+    @IBAction func attendeeQPlus(_ sender: Any) {
+        stumpScore.audienceAskedCount += 1
+        stumpScoreWatcher?.sync(scores: stumpScore)
+    }
+
+    @IBAction func attendeeQMinus(_ sender: Any) {
+        stumpScore.audienceAskedCount -= 1
         stumpScoreWatcher?.sync(scores: stumpScore)
     }
     

@@ -35,12 +35,29 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f8F-be-0D6">
                                                 <rect key="frame" x="0.0" y="40" width="512" height="708"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Panel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TEF-8t-zSM">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bzd-5l-M17">
                                                         <rect key="frame" x="0.0" y="0.0" width="512" height="100"/>
-                                                        <fontDescription key="fontDescription" name="LevelUp" family="Level Up" pointSize="100"/>
-                                                        <color key="textColor" systemColor="systemGreenColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wEU-eD-xk2">
+                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="100"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="20" id="4k1-SK-8lL"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speakers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="TEF-8t-zSM">
+                                                                <rect key="frame" x="20" y="0.0" width="472" height="100"/>
+                                                                <fontDescription key="fontDescription" name="LevelUp" family="Level Up" pointSize="100"/>
+                                                                <color key="textColor" systemColor="systemGreenColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgW-JX-GKk">
+                                                                <rect key="frame" x="492" y="0.0" width="20" height="100"/>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="qgW-JX-GKk" firstAttribute="width" secondItem="wEU-eD-xk2" secondAttribute="width" id="1Jo-5c-0O3"/>
+                                                        </constraints>
+                                                    </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0rO-Wc-y0b">
                                                         <rect key="frame" x="0.0" y="100" width="512" height="483"/>
                                                         <subviews>
@@ -58,54 +75,14 @@
                                                             </view>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bYz-Wm-dAV">
-                                                        <rect key="frame" x="0.0" y="583" width="512" height="50"/>
-                                                        <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Krv-wh-T4k">
-                                                                <rect key="frame" x="0.0" y="0.0" width="82.5" height="50"/>
-                                                            </view>
-                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Tct-Di-Yhm">
-                                                                <rect key="frame" x="92.5" y="9" width="94" height="32"/>
-                                                                <connections>
-                                                                    <action selector="panelQuestionCountChange:" destination="Ayy-nG-Ok2" eventType="valueChanged" id="I9f-D4-gb7"/>
-                                                                </connections>
-                                                            </stepper>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 asked" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr6-dz-2ie">
-                                                                <rect key="frame" x="196.5" y="10" width="160.5" height="30"/>
-                                                                <fontDescription key="fontDescription" name="LevelUp" family="Level Up" pointSize="30"/>
-                                                                <color key="textColor" systemColor="systemGreenColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEY-N0-9bl">
-                                                                <rect key="frame" x="367" y="0.0" width="145" height="50"/>
-                                                            </view>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="gcr-O4-kAq"/>
-                                                            <constraint firstItem="CEY-N0-9bl" firstAttribute="width" secondItem="Krv-wh-T4k" secondAttribute="width" multiplier="1.75824" id="m22-zC-29L"/>
-                                                        </constraints>
-                                                    </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="4gT-xm-5SB">
-                                                        <rect key="frame" x="0.0" y="633" width="512" height="75"/>
+                                                        <rect key="frame" x="0.0" y="583" width="512" height="75"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4g-Ih-aU3">
-                                                                <rect key="frame" x="0.0" y="0.0" width="113.5" height="75"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="158.5" height="75"/>
                                                             </view>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWR-ci-gdb">
-                                                                <rect key="frame" x="148.5" y="0.0" width="44" height="75"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="44" id="HPs-fM-SM6"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                                <state key="normal" title="-">
-                                                                    <color key="titleColor" systemColor="systemGreenColor"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="lowerPanelScore:" destination="Ayy-nG-Ok2" eventType="touchUpInside" id="u72-6c-HzH"/>
-                                                                </connections>
-                                                            </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDI-VK-krr">
-                                                                <rect key="frame" x="227.5" y="0.0" width="46" height="75"/>
+                                                                <rect key="frame" x="193.5" y="0.0" width="46" height="75"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                                                 <state key="normal" title="+">
                                                                     <color key="titleColor" systemColor="systemGreenColor"/>
@@ -114,13 +91,69 @@
                                                                     <action selector="raisePanelScore:" destination="Ayy-nG-Ok2" eventType="touchUpInside" id="c3a-86-Qia"/>
                                                                 </connections>
                                                             </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWR-ci-gdb">
+                                                                <rect key="frame" x="274.5" y="0.0" width="44" height="75"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="44" id="HPs-fM-SM6"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                                <state key="normal" title="–">
+                                                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="lowerPanelScore:" destination="Ayy-nG-Ok2" eventType="touchUpInside" id="u72-6c-HzH"/>
+                                                                </connections>
+                                                            </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzA-9g-RTd">
-                                                                <rect key="frame" x="308.5" y="0.0" width="203.5" height="75"/>
+                                                                <rect key="frame" x="353.5" y="0.0" width="158.5" height="75"/>
                                                             </view>
                                                         </subviews>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="75" id="3d8-En-qng"/>
-                                                            <constraint firstItem="wzA-9g-RTd" firstAttribute="width" secondItem="C4g-Ih-aU3" secondAttribute="width" multiplier="1.79104" id="k5i-As-o8Z"/>
+                                                            <constraint firstItem="wzA-9g-RTd" firstAttribute="width" secondItem="C4g-Ih-aU3" secondAttribute="width" id="k5i-As-o8Z"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bYz-Wm-dAV">
+                                                        <rect key="frame" x="0.0" y="658" width="512" height="50"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Krv-wh-T4k">
+                                                                <rect key="frame" x="0.0" y="0.0" width="96" height="50"/>
+                                                            </view>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GR-yy-ktw">
+                                                                <rect key="frame" x="106" y="3" width="44" height="44"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                                                    <fontDescription key="titleFontDescription" name="LevelUp" family="Level Up" pointSize="30"/>
+                                                                    <color key="baseForegroundColor" systemColor="systemGreenColor"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="speakerQPlus:" destination="Ayy-nG-Ok2" eventType="touchUpInside" id="0jz-jl-CCl"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asked: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fr6-dz-2ie">
+                                                                <rect key="frame" x="160" y="15" width="115.5" height="20"/>
+                                                                <fontDescription key="fontDescription" name="LevelUp" family="Level Up" pointSize="20"/>
+                                                                <color key="textColor" systemColor="systemGreenColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysh-jx-WCd">
+                                                                <rect key="frame" x="285.5" y="3" width="48" height="44"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="–">
+                                                                    <fontDescription key="titleFontDescription" name="LevelUp" family="Level Up" pointSize="30"/>
+                                                                    <color key="baseForegroundColor" systemColor="systemGreenColor"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="speakerQMinus:" destination="Ayy-nG-Ok2" eventType="touchUpInside" id="eJ8-hN-4re"/>
+                                                                </connections>
+                                                            </button>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEY-N0-9bl">
+                                                                <rect key="frame" x="343.5" y="0.0" width="168.5" height="50"/>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="gcr-O4-kAq"/>
+                                                            <constraint firstItem="CEY-N0-9bl" firstAttribute="width" secondItem="Krv-wh-T4k" secondAttribute="width" multiplier="1.75824" id="m22-zC-29L"/>
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
@@ -139,12 +172,23 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="63z-uC-rTH">
                                                 <rect key="frame" x="0.0" y="40" width="512" height="708"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Audience" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IoV-x9-sRA">
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LVV-Bd-Zpr">
                                                         <rect key="frame" x="0.0" y="0.0" width="512" height="100"/>
-                                                        <fontDescription key="fontDescription" name="LevelUp" family="Level Up" pointSize="100"/>
-                                                        <color key="textColor" systemColor="systemGreenColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DaN-hj-WID">
+                                                                <rect key="frame" x="0.0" y="0.0" width="20" height="100"/>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attendees" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IoV-x9-sRA">
+                                                                <rect key="frame" x="20" y="0.0" width="472" height="100"/>
+                                                                <fontDescription key="fontDescription" name="LevelUp" family="Level Up" pointSize="100"/>
+                                                                <color key="textColor" systemColor="systemGreenColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcZ-B8-cxx">
+                                                                <rect key="frame" x="492" y="0.0" width="20" height="100"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVq-mb-WeN">
                                                         <rect key="frame" x="0.0" y="100" width="512" height="483"/>
                                                         <subviews>
@@ -162,60 +206,33 @@
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hGR-BI-7Lv">
-                                                        <rect key="frame" x="0.0" y="583" width="512" height="50"/>
-                                                        <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaY-rw-DN0">
-                                                                <rect key="frame" x="0.0" y="0.0" width="82.5" height="50"/>
-                                                            </view>
-                                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1Il-1k-13v">
-                                                                <rect key="frame" x="92.5" y="9" width="94" height="32"/>
-                                                                <connections>
-                                                                    <action selector="audienceQuestionCountChanged:" destination="Ayy-nG-Ok2" eventType="valueChanged" id="W6w-sW-CQn"/>
-                                                                </connections>
-                                                            </stepper>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 asked" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoA-EV-YQO">
-                                                                <rect key="frame" x="196.5" y="10" width="160.5" height="30"/>
-                                                                <fontDescription key="fontDescription" name="LevelUp" family="Level Up" pointSize="30"/>
-                                                                <color key="textColor" systemColor="systemGreenColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gh-Nr-Wc3">
-                                                                <rect key="frame" x="367" y="0.0" width="145" height="50"/>
-                                                            </view>
-                                                        </subviews>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="eU2-FA-dC7"/>
-                                                            <constraint firstItem="5gh-Nr-Wc3" firstAttribute="width" secondItem="LaY-rw-DN0" secondAttribute="width" multiplier="1.75824" id="t3Z-j8-uqU"/>
-                                                        </constraints>
-                                                    </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Y9K-LU-IXw">
-                                                        <rect key="frame" x="0.0" y="633" width="512" height="75"/>
+                                                        <rect key="frame" x="0.0" y="583" width="512" height="75"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5k9-5i-EMI">
                                                                 <rect key="frame" x="0.0" y="0.0" width="113.5" height="75"/>
                                                             </view>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9w-Zx-2lP">
-                                                                <rect key="frame" x="148.5" y="0.0" width="44" height="75"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="44" id="guf-7g-49K"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                                                <state key="normal" title="-">
-                                                                    <color key="titleColor" systemColor="systemGreenColor"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="lowerAudienceScore:" destination="Ayy-nG-Ok2" eventType="touchUpInside" id="lTy-l5-ePZ"/>
-                                                                </connections>
-                                                            </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Lz-Pd-dbV">
-                                                                <rect key="frame" x="227.5" y="0.0" width="46" height="75"/>
+                                                                <rect key="frame" x="148.5" y="0.0" width="46" height="75"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                                                 <state key="normal" title="+">
                                                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="raiseAudienceScore:" destination="Ayy-nG-Ok2" eventType="touchUpInside" id="QHJ-Ih-RCp"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9w-Zx-2lP">
+                                                                <rect key="frame" x="229.5" y="0.0" width="44" height="75"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="44" id="guf-7g-49K"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                                                <state key="normal" title="–">
+                                                                    <color key="titleColor" systemColor="systemGreenColor"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="lowerAudienceScore:" destination="Ayy-nG-Ok2" eventType="touchUpInside" id="lTy-l5-ePZ"/>
                                                                 </connections>
                                                             </button>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zPk-oc-zO7">
@@ -225,6 +242,49 @@
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="75" id="9rI-QF-a2x"/>
                                                             <constraint firstItem="zPk-oc-zO7" firstAttribute="width" secondItem="5k9-5i-EMI" secondAttribute="width" multiplier="1.79104" id="cIk-CQ-b7C"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hGR-BI-7Lv">
+                                                        <rect key="frame" x="0.0" y="658" width="512" height="50"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaY-rw-DN0">
+                                                                <rect key="frame" x="0.0" y="0.0" width="96" height="50"/>
+                                                            </view>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7O-rM-Uma">
+                                                                <rect key="frame" x="106" y="3" width="44" height="44"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="+">
+                                                                    <fontDescription key="titleFontDescription" name="LevelUp" family="Level Up" pointSize="30"/>
+                                                                    <color key="baseForegroundColor" systemColor="systemGreenColor"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="attendeeQPlus:" destination="Ayy-nG-Ok2" eventType="touchUpInside" id="YcO-k8-u7D"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asked: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoA-EV-YQO">
+                                                                <rect key="frame" x="160" y="15" width="115.5" height="20"/>
+                                                                <fontDescription key="fontDescription" name="LevelUp" family="Level Up" pointSize="20"/>
+                                                                <color key="textColor" systemColor="systemGreenColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAP-xu-1dR">
+                                                                <rect key="frame" x="285.5" y="3" width="48" height="44"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="–">
+                                                                    <fontDescription key="titleFontDescription" name="LevelUp" family="Level Up" pointSize="30"/>
+                                                                    <color key="baseForegroundColor" systemColor="systemGreenColor"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="attendeeQMinus:" destination="Ayy-nG-Ok2" eventType="touchUpInside" id="FzP-An-Jp0"/>
+                                                                </connections>
+                                                            </button>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gh-Nr-Wc3">
+                                                                <rect key="frame" x="343.5" y="0.0" width="168.5" height="50"/>
+                                                            </view>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="eU2-FA-dC7"/>
+                                                            <constraint firstItem="5gh-Nr-Wc3" firstAttribute="width" secondItem="LaY-rw-DN0" secondAttribute="width" multiplier="1.75824" id="t3Z-j8-uqU"/>
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
@@ -238,6 +298,10 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="XcZ-B8-cxx" firstAttribute="width" secondItem="wEU-eD-xk2" secondAttribute="width" id="Hwl-je-PSM"/>
+                                    <constraint firstItem="DaN-hj-WID" firstAttribute="width" secondItem="wEU-eD-xk2" secondAttribute="width" id="MLl-UF-9Ck"/>
+                                </constraints>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zoG-3C-jdR">
                                 <rect key="frame" x="462" y="668" width="100" height="100"/>
@@ -281,11 +345,9 @@
                     </view>
                     <connections>
                         <outlet property="audienceAskedLabel" destination="eoA-EV-YQO" id="t2v-cm-TUp"/>
-                        <outlet property="audienceAskedStepper" destination="1Il-1k-13v" id="dFr-17-dlG"/>
                         <outlet property="audienceScoreLabel" destination="Z5o-zm-THm" id="Z9K-hW-lgf"/>
                         <outlet property="lastUpdatedDateLabel" destination="hMu-UJ-f4v" id="YBD-Sz-sIG"/>
                         <outlet property="panelAskedLabel" destination="fr6-dz-2ie" id="3dE-bc-E1e"/>
-                        <outlet property="panelAskedStepper" destination="Tct-Di-Yhm" id="kw2-MF-g3X"/>
                         <outlet property="panelScoreLabel" destination="Jsk-GJ-JRy" id="IFa-3x-cQO"/>
                     </connections>
                 </viewController>
