@@ -56,9 +56,37 @@ class KeypadViewController: UIViewController {
         valueField.text = currentValueString
         finishedButton.setTitle(finishedButtonText, for: .normal)
     }
+
+    // Need this so that pressesBegan will work, and we can respond to external keyboards
+    override var canBecomeFirstResponder: Bool {
+        return true
+    }
     
-    @IBAction func typeDigit(_ sender: UIButton) {
-        let digit = sender.tag
+    // Respond to number keys and delete/backspace from external keyboards
+    override func pressesBegan(_ presses: Set<UIPress>, with event: UIPressesEvent?) {
+//        print("Presses began: \(presses) with event \(event)")
+        guard presses.count == 1, // Only one press at a time
+              let press = presses.first,
+              let pressedKey = press.key,
+              pressedKey.modifierFlags == [] // No modifiers (shift, ctrl) allowed
+        else {
+            super.pressesBegan(presses, with: event)
+            return
+        }
+        
+        if let numberPressed = Int(pressedKey.characters) {
+            // Handle number keys
+            print("number pressed: \(numberPressed)")
+            handlePressOf(digit: numberPressed)
+        } else if pressedKey.keyCode == .keyboardDeleteOrBackspace {
+            // Handle backspace/delete
+            handleBackspace()
+        } else {
+            super.pressesBegan(presses, with: event)
+        }
+    }
+
+    func handlePressOf(digit: Int) -> Void {
         if currentValueString == "0" {
             currentValueString = "\(digit)"
         } else {
@@ -66,11 +94,19 @@ class KeypadViewController: UIViewController {
         }
     }
     
-    @IBAction func backspace(_ sender: Any) {
+    func handleBackspace() -> Void {
         currentValueString = {
             let newCurrentValue = String(currentValueString.dropLast())
             return newCurrentValue.isEmpty ? "0" : newCurrentValue
         }()
+    }
+    
+    @IBAction func typeDigit(_ sender: UIButton) {
+        handlePressOf(digit: sender.tag)
+    }
+    
+    @IBAction func backspace(_ sender: Any) {
+        handleBackspace()
     }
 
     @IBAction func finished(_ sender: Any) {
