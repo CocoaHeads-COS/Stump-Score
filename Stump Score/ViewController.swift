@@ -73,7 +73,7 @@ class ViewController: UIViewController {
     
     @IBAction func raiseAudienceScore(_ sender: UIButton) {
         showKeypad(title:"Add", sender: sender) { scoreChange in
-            self.stumpScore.audienceScore -= scoreChange
+            self.stumpScore.audienceScore += scoreChange
             self.stumpScoreWatcher?.sync(scores: self.stumpScore)
         }
     }
