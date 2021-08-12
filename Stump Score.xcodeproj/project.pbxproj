@@ -49,6 +49,7 @@
 		81371FE64EB1A07126F76BD8 /* Pods-Stump ScoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stump ScoreTests.release.xcconfig"; path = "Target Support Files/Pods-Stump ScoreTests/Pods-Stump ScoreTests.release.xcconfig"; sourceTree = "<group>"; };
 		898BF30FF09B594645C1FCC0 /* Pods-Stump ScoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stump ScoreTests.debug.xcconfig"; path = "Target Support Files/Pods-Stump ScoreTests/Pods-Stump ScoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8642DF74CE696FBD2250FD6 /* Pods-Stump Score-Stump ScoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stump Score-Stump ScoreUITests.release.xcconfig"; path = "Target Support Files/Pods-Stump Score-Stump ScoreUITests/Pods-Stump Score-Stump ScoreUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EE63293326C47ABB00015F16 /* Firebase-validation-rules.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Firebase-validation-rules.json"; sourceTree = "<group>"; };
 		EE67C55A1D6C99B900F1C459 /* Stump Score.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stump Score.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE67C55D1D6C99B900F1C459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE67C55F1D6C99B900F1C459 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +125,7 @@
 		EE67C5511D6C99B900F1C459 = {
 			isa = PBXGroup;
 			children = (
+				EE63293326C47ABB00015F16 /* Firebase-validation-rules.json */,
 				EE67C55C1D6C99B900F1C459 /* Stump Score */,
 				EE67C5711D6C99B900F1C459 /* Stump ScoreTests */,
 				EE67C57C1D6C99B900F1C459 /* Stump ScoreUITests */,

@@ -1,0 +1,46 @@
+{
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    /* Disallow read/write at unknown paths */
+    ".read": false,
+    ".write": false,
+    "stumpScores": {
+        /* stumpScores must have all four children and no others and all must have numeric values */
+        ".read": true,
+        ".write": true,
+        ".validate": "newData.hasChildren(['panelScore', 'audienceScore', 'panelAskedCount', 'audienceAskedCount'])",
+        "panelScore": {
+          ".validate": "newData.isNumber()"
+        },
+        "audienceScore": {
+          ".validate": "newData.isNumber()"
+        },
+        "panelAskedCount": {
+          ".validate": "newData.isNumber()"
+        },
+        "audienceAskedCount": {
+          ".validate": "newData.isNumber()"
+        },
+        "$other": {
+          ".validate": false
+        }
+    },
+    "stumps": {
+      /* stumps must have two children and no others-- message is a short string, messageDate is a number (a timestamp) */
+      ".read": true,
+      ".write": true,
+      "$stump": {
+          ".validate": "newData.hasChildren(['message', 'messageDate'])",
+          "message": {
+              ".validate": "newData.isString() && newData.val().length <= 20"
+          },
+          "messageDate": {
+              ".validate": "newData.isNumber()"
+          },
+          "$other": {
+            ".validate": false
+          }
+      }
+    }
+  }
+}

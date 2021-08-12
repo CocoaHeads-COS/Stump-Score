@@ -19,10 +19,10 @@ class ViewController: UIViewController {
     var stumpScoreWatcher: StumpScoreWatcher?
     var stumpScore = StumpScores() {
         didSet {
-            panelScoreLabel.text = String(stumpScore.panelScore)
-            audienceScoreLabel.text = String(stumpScore.audienceScore)
-            panelAskedLabel.text = "Asked: \(stumpScore.panelAskedCount)"
-            audienceAskedLabel.text = "Asked: \(stumpScore.audienceAskedCount)"
+            panelScoreLabel.text = String(stumpScore[.panelScore])
+            audienceScoreLabel.text = String(stumpScore[.audienceScore])
+            panelAskedLabel.text = "Asked: \(stumpScore[.panelAskedCount])"
+            audienceAskedLabel.text = "Asked: \(stumpScore[.audienceAskedCount])"
         }
     }
     
@@ -59,49 +59,49 @@ class ViewController: UIViewController {
 
     @IBAction func raisePanelScore(_ sender: UIButton) {
         showKeypad(title:"Add", sender: sender) { scoreChange in
-            self.stumpScore.panelScore += scoreChange
+            self.stumpScore[.panelScore] += scoreChange
             self.stumpScoreWatcher?.sync(scores: self.stumpScore)
         }
     }
     
     @IBAction func lowerPanelScore(_ sender: UIButton) {
         showKeypad(title:"Subtract", sender: sender) { scoreChange in
-            self.stumpScore.panelScore -= scoreChange
+            self.stumpScore[.panelScore] -= scoreChange
             self.stumpScoreWatcher?.sync(scores: self.stumpScore)
         }
     }
     
     @IBAction func raiseAudienceScore(_ sender: UIButton) {
         showKeypad(title:"Add", sender: sender) { scoreChange in
-            self.stumpScore.audienceScore += scoreChange
+            self.stumpScore[.audienceScore] += scoreChange
             self.stumpScoreWatcher?.sync(scores: self.stumpScore)
         }
     }
 
     @IBAction func lowerAudienceScore(_ sender: UIButton) {
         showKeypad(title:"Subtract", sender: sender) { scoreChange in
-            self.stumpScore.audienceScore -= scoreChange
+            self.stumpScore[.audienceScore] -= scoreChange
             self.stumpScoreWatcher?.sync(scores: self.stumpScore)
         }
     }
     
     @IBAction func speakerQPlus(_ sender: Any) {
-        stumpScore.panelAskedCount += 1
+        stumpScore[.panelAskedCount] += 1
         stumpScoreWatcher?.sync(scores: stumpScore)
     }
     
     @IBAction func speakerQMinus(_ sender: Any) {
-        stumpScore.panelAskedCount -= 1
+        stumpScore[.panelAskedCount] -= 1
         stumpScoreWatcher?.sync(scores: stumpScore)
     }
     
     @IBAction func attendeeQPlus(_ sender: Any) {
-        stumpScore.audienceAskedCount += 1
+        stumpScore[.audienceAskedCount] += 1
         stumpScoreWatcher?.sync(scores: stumpScore)
     }
 
     @IBAction func attendeeQMinus(_ sender: Any) {
-        stumpScore.audienceAskedCount -= 1
+        stumpScore[.audienceAskedCount] -= 1
         stumpScoreWatcher?.sync(scores: stumpScore)
     }
     
