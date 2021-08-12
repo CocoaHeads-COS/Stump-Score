@@ -57,6 +57,11 @@ class KeypadViewController: UIViewController {
         finishedButton.setTitle(finishedButtonText, for: .normal)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        becomeFirstResponder()
+    }
+    
     // Need this so that pressesBegan will work, and we can respond to external keyboards
     override var canBecomeFirstResponder: Bool {
         return true
