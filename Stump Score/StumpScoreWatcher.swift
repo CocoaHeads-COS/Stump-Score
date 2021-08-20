@@ -96,7 +96,6 @@ class StumpScoreWatcher {
     func update(from snapshot: DataSnapshot) -> Void {
         guard let scoreStringDict = snapshot.value as? StumpScores.SnapshotDict else { return }
         let score = StumpScores(stringDict: scoreStringDict)
-        guard score != self.score else { return }
         self.score = score
         print("New score value: \(score)")
     }
