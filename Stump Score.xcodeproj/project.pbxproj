@@ -19,8 +19,9 @@
 		EE67C57E1D6C99B900F1C459 /* Stump_ScoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE67C57D1D6C99B900F1C459 /* Stump_ScoreUITests.swift */; };
 		EE7B299D24DDC005002C8B9B /* StumpScoreWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B299C24DDC005002C8B9B /* StumpScoreWatcher.swift */; };
 		EE7B299F24DE05E8002C8B9B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE7B299E24DE05E8002C8B9B /* GoogleService-Info.plist */; };
+		EE99C291289892B400090C85 /* AppleGaramond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE99C290289892B400090C85 /* AppleGaramond.ttf */; };
+		EE99C2932898955700090C85 /* Cheetah stripes.png in Resources */ = {isa = PBXBuildFile; fileRef = EE99C2922898955700090C85 /* Cheetah stripes.png */; };
 		EECA52F326B8BCD000E61AE4 /* KeypadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECA52F226B8BCD000E61AE4 /* KeypadViewController.swift */; };
-		EECA52F526B9B4C200E61AE4 /* Oleg Stepanov - LevelUp.otf in Resources */ = {isa = PBXBuildFile; fileRef = EECA52F426B9B4C200E61AE4 /* Oleg Stepanov - LevelUp.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +66,9 @@
 		EE67C57F1D6C99B900F1C459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE7B299C24DDC005002C8B9B /* StumpScoreWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StumpScoreWatcher.swift; sourceTree = "<group>"; };
 		EE7B299E24DE05E8002C8B9B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EE99C290289892B400090C85 /* AppleGaramond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleGaramond.ttf; sourceTree = "<group>"; };
+		EE99C2922898955700090C85 /* Cheetah stripes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cheetah stripes.png"; sourceTree = "<group>"; };
 		EECA52F226B8BCD000E61AE4 /* KeypadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeypadViewController.swift; sourceTree = "<group>"; };
-		EECA52F426B9B4C200E61AE4 /* Oleg Stepanov - LevelUp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oleg Stepanov - LevelUp.otf"; sourceTree = "<group>"; };
 		EECA52F626B9F7F100E61AE4 /* Stump Score.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Stump Score.entitlements"; sourceTree = "<group>"; };
 		EF6E06B059D4DDFEE30B0CE2 /* Pods_Stump_Score.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stump_Score.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -155,10 +157,11 @@
 				EECA52F226B8BCD000E61AE4 /* KeypadViewController.swift */,
 				EE67C5611D6C99B900F1C459 /* Main.storyboard */,
 				EE67C5641D6C99B900F1C459 /* Assets.xcassets */,
+				EE99C2922898955700090C85 /* Cheetah stripes.png */,
 				EE67C5661D6C99B900F1C459 /* LaunchScreen.storyboard */,
 				EE67C5691D6C99B900F1C459 /* Info.plist */,
 				EE7B299E24DE05E8002C8B9B /* GoogleService-Info.plist */,
-				EECA52F426B9B4C200E61AE4 /* Oleg Stepanov - LevelUp.otf */,
+				EE99C290289892B400090C85 /* AppleGaramond.ttf */,
 			);
 			path = "Stump Score";
 			sourceTree = "<group>";
@@ -299,11 +302,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE99C291289892B400090C85 /* AppleGaramond.ttf in Resources */,
+				EE99C2932898955700090C85 /* Cheetah stripes.png in Resources */,
 				EE67C5681D6C99B900F1C459 /* LaunchScreen.storyboard in Resources */,
 				EE7B299F24DE05E8002C8B9B /* GoogleService-Info.plist in Resources */,
 				EE67C5651D6C99B900F1C459 /* Assets.xcassets in Resources */,
 				EE67C5631D6C99B900F1C459 /* Main.storyboard in Resources */,
-				EECA52F526B9B4C200E61AE4 /* Oleg Stepanov - LevelUp.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -50,6 +50,9 @@ class ViewController: UIViewController {
             
             self.lastUpdatedDateLabel.text = "\(secondSinceLastTouch)"
         }
+        
+        let rawStripeImage = UIImage(named: "Cheetah stripes.png")!
+        view.backgroundColor = UIColor(patternImage: rawStripeImage)
     }
 
     override func didReceiveMemoryWarning() {
